@@ -1,5 +1,6 @@
 * {
-    /* border: 1px solid plum; */
+    /* border: 1px solid black; */
+    font-family: monospace, 'Courier New', Courier;
 }
 #body,
 html {
@@ -17,6 +18,9 @@ html {
     border: 2px solid #1E2022;
     border-radius: 25px;
 }
+#hero {
+    color: black;
+}
 #navBarLink {
     margin-left: auto;
     align-self: center;
@@ -24,9 +28,25 @@ html {
     color: inherit
 }
 #navBarLink:hover {
-    font-family: monospace;
+    font-size: larger;
     background-color: #efffff;
     color: blue;
     border-radius: 25px;
     padding: 2px;
+}
+#Content-container {
+    display: flex;
+    gap: 2em;
+}
+#panel {
+    width: 500px;
+    padding: 30px
+}
+#leftPanel {
+    color: black;
+    background-color: #E6F2EA;
+}
+#rightPanel {
+    color: aliceblue;
+    background-color: #797979;
 }
