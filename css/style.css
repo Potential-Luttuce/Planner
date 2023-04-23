@@ -23,3 +23,10 @@ html {
     text-decoration: none;
     color: inherit
 }
+#navBarLink:hover {
+    font-family: monospace;
+    background-color: #efffff;
+    color: blue;
+    border-radius: 25px;
+    padding: 2px;
+}
