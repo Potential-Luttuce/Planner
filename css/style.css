@@ -10,8 +10,9 @@ html {
     background-color: #B7C9D3;
 }
 #navBar {
+    /* height: 75; */
     margin: 5px 1em;
-    padding: 0 .50em;
+    padding: .5em .50em;
     display: flex;
     justify-content: center;
     background-color: #788e98;
@@ -21,19 +22,25 @@ html {
 }
 #hero {
     color: black;
+    font-size: 36px;
+    font-weight: 900;
+    text-shadow: -1px 2px white;
 }
-#navBarLink {
-    margin-left: auto;
+.navBarLink {
     align-self: center;
+    background-color: inherit;
     text-decoration: none;
-    color: inherit
+    color: inherit;
 }
-#navBarLink:hover,
-#leftButton:hover {
+.leftlink:hover {
     background-color: #efffff;
     color: blue;
     border-radius: 25px;
     padding: 2px;
+}
+.leftlink {
+    margin-left: auto;
+    margin-right: 2em;
 }
 #Content-container {
     display: flex;
@@ -45,6 +52,12 @@ html {
     width: 350px;
     padding: 30px;
     border: 1px solid black;
+}
+#panelHeaderLeft {
+    text-shadow: 3px 3px white;
+}
+#panelHeaderRight {
+    text-shadow: 3px 3px black;
 }
 #leftPanel {
     color: black;
@@ -59,3 +72,13 @@ html {
     color: aliceblue;
     background-color: #797979;
 }
+.output {
+    margin-top: 20px;
+  }
+  
+  .outputs {
+    padding: 20px;
+    font-size: 2em;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }

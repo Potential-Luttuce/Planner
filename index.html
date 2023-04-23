@@ -7,35 +7,42 @@
     <title>Mikes Planner Project</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body id = "body">
     <div id="page">
         <div id="navBar">
-            <p id="hero">Planner!</p>
-            <a id="navBarLink" href="https://github.com/CodeWithCuesta">
+            <div id="hero">Planner!</div>
+            <a class="navBarLink leftlink" href="https://github.com/CodeWithCuesta"
+            target="_blank">
                 CodeWithCuesta</a>
+                <button class="navBarLink" onclick="window.print()">Print this page</button>
         </div>
         <div id="Content-container">
             <div id="leftPanel" class="panel">
-                    <div class="panelHeader">
-                        <h1>Left Panel Header</h1>
+                    <div id="panelHeaderLeft">
+                        <h1>Getting Started</h1>
                     </div>
                     <div id="leftPanelText">
-                        LeftPanelText
+                        Enter a New Task:
                     </div>
                     <div id="LeftConent">
-                        <button id="leftButton">Click Me!</button>
+                        <form class="form-input">
+                            <input class="div-input">
+                            <button onclick="makeTask()">Create Task</button>
+                        </form>
                     </div>
             </div>
             <div id="rightPanel" class="panel">
-                <div id="panelHeader">
-                    <h1>Right Panel header</h1>
+                <div id="panelHeaderRight">
+                    <h1>To Do List</h1>
                 </div>
                 <div id="rightPanelText">
                     RightPanelText
                 </div>
                 <div id="Task-container">
                     <u>Tasks:</u>
+                    <div id="demo"></div>
                 </div>
             </div>
             </div> 
