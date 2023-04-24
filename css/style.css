@@ -15,6 +15,7 @@
     padding: .5em .50em;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: #788e98;
     color: aliceblue;
     border: 2px solid #1f221e;
@@ -44,14 +45,16 @@
 }
 #Tasks-container {
     display: flex;
-    gap: 2em;
-    justify-content: center;
+    gap: 1em;
+    justify-content: space-evenly;
     /* border: 1px solid yellow; */
 }
 .panel {
-    width: 350px;
+    width: 400px;
+    min-width: 250px;
     padding: 30px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 #panelHeaderLeft {
     text-shadow: 3px 3px white;
@@ -75,7 +78,6 @@
 #notes-container {
     display: flex;
     margin: 1em;
-    width: 90%;
     height: 400px;
     background-color: antiquewhite;
     border-radius: 15px;
