@@ -1,3 +1,6 @@
+document.getElementById("taskBttn").addEventListener("click", makeTask);
+
 function makeTask() {
-    document.getElementById('demo').innerHTML = $('.div-input')
-  }
+  var newTask = document.getElementById("taskInput").value;
+  document.getElementById("demo").innerHTML = newTask;
+}
