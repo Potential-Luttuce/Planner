@@ -3,10 +3,10 @@
     /* margin: 2px; */
     font-family: monospace, 'Courier New', Courier;
 }
-#body,
-html {
+#body{
     /* border: 5px solid black; */
     margin: 0;
+    padding: .5em;
     background-color: #B7C9D3;
 }
 #navBar {
@@ -42,7 +42,7 @@ html {
     margin-left: auto;
     margin-right: 2em;
 }
-#Content-container {
+#Tasks-container {
     display: flex;
     gap: 2em;
     justify-content: center;
@@ -72,13 +72,17 @@ html {
     color: aliceblue;
     background-color: #797979;
 }
-.output {
-    margin-top: 20px;
-  }
-  
-  .outputs {
-    padding: 20px;
-    font-size: 2em;
-    border: 1px solid black;
-    margin-bottom: 10px;
-  }
+#notes-container {
+    display: flex;
+    margin: 1em;
+    width: 90%;
+    height: 400px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+#notes {
+    width: 100%;
+}
+.note {
+    padding-left: 10px;
+}
